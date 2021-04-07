@@ -1,6 +1,6 @@
 pragma solidity >=0.5.0;
 
-import '@uniswap/v2-core/contracts/interfaces/IPancakePair.sol';
+import '../interfaces/IPancakePair.sol';
 
 import "./SafeMath.sol";
 
@@ -21,7 +21,7 @@ library PancakeLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66' // init code hash
+                hex'8245a59da232a7e2b0a5fadbbf67fd1e29d0dc12f0bbcfff7455b7f1e480f5c4' // init code hash
             ))));
     }
 
